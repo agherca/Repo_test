@@ -44,6 +44,9 @@ cd $SRCROOT/sw/tivoapp && cbe make -j16 && cbe make linkroot && cbe make copyima
 <<======================><======================>>Bootstrapping-InitialSetup<<======================><======================>>
 cbe make clobber && cbe make setup-roots && cbe make unsymlink && cbe make strip && cbe make xnfsimage && cbe make monolithic
 
+Builds from United States of America:
+export DIST_ROOT=/net/nasfs01.tivo.com/ifs/unixroot/engineering/dist_nfs/dist_nfs_qt/dist/rpms
+export RPMDIR=/net/nasfs01.tivo.com/ifs/unixroot/engineering/dist_nfs/dist_nfs_qt/dist/rpms
 
 <<======================><======================>>Compile & run Unit Tests<<======================><======================>>
 cd ~/sandbox/agherca-workspace2/b-tcdclient-harmony/srcroot/ && source SOURCEME.SH dev-x86
